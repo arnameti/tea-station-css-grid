@@ -1,0 +1,45 @@
+.products {
+  background-color: var(--clr-grey-10) ;
+
+  & > .section-center {
+    display: grid;
+    grid-template-columns: 1.1fr 3fr;
+    grid-column-gap: 5rem;
+  }
+
+  &__info {
+    & > h3 {
+      font-family: var(--ff-secondary);
+      color: var(--clr-primary);
+    }
+  }
+
+  &__inventory {
+    justify-self: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+  }
+
+  &__product {
+    display: grid;
+    grid-template-rows: 1fr min-content min-content;
+  }
+
+  &__product-img {
+    height: 30rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 3rem;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__price {
+    margin-bottom: 0;
+  }
+
+}
