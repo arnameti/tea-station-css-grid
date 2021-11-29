@@ -1,0 +1,32 @@
+.about {
+  & > .section-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12rem;
+  }
+
+  &__img-container {
+    background: var(--clr-primary);
+    border: 8px solid var(--clr-primary);
+    overflow: hidden;
+  }
+
+  &__picture {
+    transition: var(--transition);
+  }
+
+  &__img-container:hover &__picture {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+
+  &__info {
+    & > h2 {
+      margin-bottom: 3rem;
+    }
+    & > h3 {
+      font-family: var(--ff-secondary);
+      color: var(--clr-primary);
+    }
+  }
+}
