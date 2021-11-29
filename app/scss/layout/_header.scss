@@ -1,0 +1,33 @@
+.header {
+  grid-row: 1 / 2;
+
+  /*
+  background-image: url("../images/main-bcg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // to darken the background-image, you have to use linear-gradient
+*/
+  
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/main-bcg.jpeg) center/cover no-repeat fixed;
+
+  display: grid;
+  place-items: center;
+
+  &__banner {
+    text-align: center;
+    color: var(--clr-white);
+ 
+
+    & > h2 {
+      font-family: var(--ff-secondary);
+      color: var(--clr-primary);
+    }
+    & > h1 {
+      color: var(--clr-white);
+      text-transform: uppercase;
+    }
+  }
+}
